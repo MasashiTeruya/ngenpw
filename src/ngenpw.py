@@ -6,12 +6,11 @@ import string
 
 DEFAULT_LENGTH = 12
 parser = argparse.ArgumentParser()
-parser.add_argument('-n', type=int, required=False,
-                    help='password length', metavar='N')
+parser.add_argument('-n', '--number', metavar='N', type=int,
+                    help='password length',
+                    default=DEFAULT_LENGTH)
 args = parser.parse_args()
-length = DEFAULT_LENGTH
-if args.n:
-    length = args.n
+length = args.number
 
 ascii = string.ascii_letters
 digits = string.digits
