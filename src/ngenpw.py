@@ -11,7 +11,7 @@ parser.add_argument('-n', type=int, required=False,
 args = parser.parse_args()
 length = DEFAULT_LENGTH
 if args.n:
-    length = args.length
+    length = args.n
 
 ascii = string.ascii_letters
 digits = string.digits
