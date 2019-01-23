@@ -20,7 +20,7 @@ parser.add_argument('-in', '--ignore-numbers',
 parser.add_argument('-is', '--ignore-special-charactors',
                     action='store_true',
                     help='excludes special charactors from being used',
-                    default=False)
+                    default=True)
 args = parser.parse_args()
 
 length = args.number
